@@ -6,4 +6,4 @@ install:
 
 script:
   - set -o pipefail
-  - xcodebuild clean build test -scheme zimages-ios -destination 'platform=iOS Simulator,name=iPhone 6s,OS=9.3' | xcpretty -s
+  - xcodebuild build test -scheme zimages-ios -destination 'platform=iOS Simulator,name=iPhone 6s,OS=9.3' | xcpretty -s
