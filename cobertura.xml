@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.4884453781512605" branch-rate="1.0000000000000000" lines-covered="465" lines-valid="952" branches-covered="0" branches-valid="0" complexity="0.0" timestamp="1475749064" version="Slather 2.3.0">
+<coverage line-rate="0.4884453781512605" branch-rate="1.0000000000000000" lines-covered="465" lines-valid="952" branches-covered="0" branches-valid="0" complexity="0.0" timestamp="1475750309" version="Slather 2.3.0">
   <sources>
     <source>/Users/jenkins/wire-ios-scripts</source>
   </sources>
