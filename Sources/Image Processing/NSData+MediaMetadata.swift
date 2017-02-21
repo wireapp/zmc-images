@@ -48,7 +48,7 @@ public extension NSData {
     // Removes the privacy-related metadata tags from the binary image (see nullMetadataProperties).
     // Supports JPEG, TIFF, PNG and other image (container) formats/types.
     // @throws MetadataRemovalError
-    public func wr_removingImageMetadata() throws -> NSData {
+    @objc public func wr_removingImageMetadata() throws -> NSData {
         guard let imageSource = CGImageSourceCreateWithData(self, nil),
               let type = CGImageSourceGetType(imageSource) else {
             throw MetadataError.unknownFormat
@@ -73,7 +73,7 @@ public extension NSData {
     
     // Retrieves image metadata from the binary image.
     // @throws MetadataRemovalError
-    public func wr_metadata() throws -> [String: Any] {
+    @objc public func wr_metadata() throws -> [String: Any] {
         guard let imageSource = CGImageSourceCreateWithData(self, nil) else {
             throw MetadataError.unknownFormat
         }
