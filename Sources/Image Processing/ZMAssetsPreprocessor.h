@@ -29,7 +29,7 @@
 
 @property (nonatomic, weak, nullable) id<ZMAssetsPreprocessorDelegate> delegate;
 
-- (NSArray * __nullable)operationsForPreprocessingImageOwner:(id<ZMImageOwner> __nonnull)imageOwner;
+- (NSArray<NSOperation *> * __nullable)operationsForPreprocessingImageOwner:(id<ZMImageOwner> __nonnull)imageOwner;
 
 @end
 
@@ -37,7 +37,7 @@
 
 @protocol ZMAssetsPreprocessorDelegate <NSObject>
 
-- (void)completedDownsampleOperation:(ZMImageDownsampleOperation * __nonnull)operation
+- (void)completedDownsampleOperation:(id<ZMImageDownsampleOperationProtocol> __nonnull)operation
                           imageOwner:(id<ZMImageOwner> __nonnull)imageOwner;
 
 - (void)failedPreprocessingImageOwner:(id<ZMImageOwner> __nonnull)imageOwner;
