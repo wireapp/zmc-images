@@ -1,0 +1,3 @@
+[submodule "SharedResources"]
+	path = SharedResources
+	url = git@github.com:wireapp/wire-ios-shared-resources.git
