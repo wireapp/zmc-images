@@ -43,7 +43,7 @@
 - (void)failedPreprocessingImageOwner:(id<ZMImageOwner> __nonnull)imageOwner;
 - (void)didCompleteProcessingImageOwner:(id<ZMImageOwner> __nonnull)imageOwner;
 
-- (NSOperation * __nullable)preprocessingComleteOperationForImageOwner:(id<ZMImageOwner> __nonnull)imageOwner;
+- (NSOperation * __nullable)preprocessingCompleteOperationForImageOwner:(id<ZMImageOwner> __nonnull)imageOwner;
 
 @end
 
