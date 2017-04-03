@@ -23,8 +23,6 @@
 		096960341B663EF0006DF53B /* ZMImagePreprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 098CB13A1B5FAD5A00712DF9 /* ZMImagePreprocessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		096960351B663EF0006DF53B /* ZMImagePreprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 098CB13B1B5FAD5A00712DF9 /* ZMImagePreprocessor.m */; };
 		096960361B663EFC006DF53B /* WireImages.h in Headers */ = {isa = PBXBuildFile; fileRef = 098CB13C1B5FAD5A00712DF9 /* WireImages.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		096AD7021B67FBF100E007A8 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 096AD6FF1B67FBDB00E007A8 /* OCMock.framework */; };
-		096AD7071B67FC5E00E007A8 /* OCMock.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 096AD6FF1B67FBDB00E007A8 /* OCMock.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		09A218061B78F34E0076547A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A218051B78F34E0076547A /* CoreGraphics.framework */; };
 		09A218081B78F3530076547A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A218071B78F3530076547A /* libz.dylib */; };
 		09B976CB1B6693D700A30B38 /* ZMImagePreprocessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B976C91B6693D700A30B38 /* ZMImagePreprocessorTests.m */; };
@@ -34,14 +32,18 @@
 		09B977CA1B66A08A00A30B38 /* NSDataZMMessageDigestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B977C81B66A08A00A30B38 /* NSDataZMMessageDigestTests.m */; };
 		09BCDB591BC664DA0020DCC7 /* ImageOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BCDB581BC664DA0020DCC7 /* ImageOwner.swift */; };
 		09BCDB5D1BC68F720020DCC7 /* ZMImageOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BCDB5C1BC68F410020DCC7 /* ZMImageOwner.m */; };
-		09F186421B690799007A3DA6 /* ZMTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F186411B69077B007A3DA6 /* ZMTesting.framework */; };
-		09F186441B6907A1007A3DA6 /* ZMTesting.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 09F186411B69077B007A3DA6 /* ZMTesting.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5405B0091BCEBDBF00C0C3BD /* ZMIImageProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 5405B0071BCEBDBF00C0C3BD /* ZMIImageProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5405B00A1BCEBDBF00C0C3BD /* ZMIImageProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5405B0081BCEBDBF00C0C3BD /* ZMIImageProperties.m */; };
-		5471F8321B73E76A00460C35 /* ZMCSystem.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5471F82A1B73E74300460C35 /* ZMCSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5471F8331B73E76D00460C35 /* ZMUtilities.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5471F82B1B73E74300460C35 /* ZMUtilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5471F8341B73E81A00460C35 /* ZMUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5471F82B1B73E74300460C35 /* ZMUtilities.framework */; };
-		5471F8351B73E81C00460C35 /* ZMCSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5471F82A1B73E74300460C35 /* ZMCSystem.framework */; };
+		54A5A60A1E929C4600D56F2E /* WireSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A5A6081E929C4600D56F2E /* WireSystem.framework */; };
+		54A5A60B1E929C4600D56F2E /* WireUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A5A6091E929C4600D56F2E /* WireUtilities.framework */; };
+		54A5A6111E929CB700D56F2E /* WireTesting.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 54A5A60C1E929C6100D56F2E /* WireTesting.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		54A5A6141E929FC400D56F2E /* WireImages.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0969600C1B663E7B006DF53B /* WireImages.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		54A5A6161E92A01100D56F2E /* WireImages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0969600C1B663E7B006DF53B /* WireImages.framework */; };
+		54A5A6191E92A08900D56F2E /* WireUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A5A6091E929C4600D56F2E /* WireUtilities.framework */; };
+		54A5A61A1E92A09000D56F2E /* WireTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A5A60C1E929C6100D56F2E /* WireTesting.framework */; };
+		54A5A61B1E92A09300D56F2E /* WireSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A5A6081E929C4600D56F2E /* WireSystem.framework */; };
+		54A5A61E1E92A11500D56F2E /* WireSystem.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 54A5A6081E929C4600D56F2E /* WireSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		54A5A61F1E92A12A00D56F2E /* WireUtilities.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 54A5A6091E929C4600D56F2E /* WireUtilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		870253E41DAB7AA00095D272 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 870253E31DAB7AA00095D272 /* main.m */; };
 		870253E71DAB7AA00095D272 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 870253E61DAB7AA00095D272 /* AppDelegate.m */; };
 		870253EA1DAB7AA00095D272 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 870253E91DAB7AA00095D272 /* ViewController.m */; };
@@ -49,13 +51,7 @@
 		870253EF1DAB7AA00095D272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 870253EE1DAB7AA00095D272 /* Assets.xcassets */; };
 		870253F21DAB7AA00095D272 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870253F01DAB7AA00095D272 /* LaunchScreen.storyboard */; };
 		870253F91DAB7B190095D272 /* WireImages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0969600C1B663E7B006DF53B /* WireImages.framework */; };
-		870253FA1DAB7B250095D272 /* ZMCSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5471F82A1B73E74300460C35 /* ZMCSystem.framework */; };
-		870253FB1DAB7B250095D272 /* ZMUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5471F82B1B73E74300460C35 /* ZMUtilities.framework */; };
-		870253FC1DAB7B250095D272 /* ZMTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F186411B69077B007A3DA6 /* ZMTesting.framework */; };
 		870253FD1DAB7B250095D272 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 096AD6FF1B67FBDB00E007A8 /* OCMock.framework */; };
-		870253FF1DAB7B5B0095D272 /* ZMCSystem.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5471F82A1B73E74300460C35 /* ZMCSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		870254001DAB7B5E0095D272 /* ZMUtilities.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5471F82B1B73E74300460C35 /* ZMUtilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		870254011DAB7B5E0095D272 /* ZMTesting.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 09F186411B69077B007A3DA6 /* ZMTesting.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		870254021DAB7B5E0095D272 /* OCMock.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 096AD6FF1B67FBDB00E007A8 /* OCMock.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		878D7C6E1E641EB100770E84 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878D7C6D1E641EB100770E84 /* ImageIO.framework */; };
 		87B91C041E5C586D00A5EC11 /* NSData+MediaMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B91C031E5C586D00A5EC11 /* NSData+MediaMetadata.swift */; };
@@ -104,38 +100,26 @@
 			remoteGlobalIDString = 0969600B1B663E7B006DF53B;
 			remoteInfo = "zimages-ios";
 		};
-		870253F71DAB7AA40095D272 /* PBXContainerItemProxy */ = {
+		54A5A6171E92A06100D56F2E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 09DD1EA91B5D41E0005EBCC4 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 870253DF1DAB7A9F0095D272;
-			remoteInfo = "zimages-iosTestHost";
+			remoteInfo = "WireImages-iosTestHost";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		096AD7061B67FC5500E007A8 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				096AD7071B67FC5E00E007A8 /* OCMock.framework in CopyFiles */,
-				09F186441B6907A1007A3DA6 /* ZMTesting.framework in CopyFiles */,
-				5471F8331B73E76D00460C35 /* ZMUtilities.framework in CopyFiles */,
-				5471F8321B73E76A00460C35 /* ZMCSystem.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		870253FE1DAB7B4E0095D272 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				870253FF1DAB7B5B0095D272 /* ZMCSystem.framework in CopyFiles */,
-				870254001DAB7B5E0095D272 /* ZMUtilities.framework in CopyFiles */,
-				870254011DAB7B5E0095D272 /* ZMTesting.framework in CopyFiles */,
+				54A5A61F1E92A12A00D56F2E /* WireUtilities.framework in CopyFiles */,
+				54A5A61E1E92A11500D56F2E /* WireSystem.framework in CopyFiles */,
+				54A5A6141E929FC400D56F2E /* WireImages.framework in CopyFiles */,
+				54A5A6111E929CB700D56F2E /* WireTesting.framework in CopyFiles */,
 				870254021DAB7B5E0095D272 /* OCMock.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,7 +161,6 @@
 		09B977C81B66A08A00A30B38 /* NSDataZMMessageDigestTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataZMMessageDigestTests.m; sourceTree = "<group>"; };
 		09BCDB581BC664DA0020DCC7 /* ImageOwner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageOwner.swift; sourceTree = "<group>"; };
 		09BCDB5C1BC68F410020DCC7 /* ZMImageOwner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMImageOwner.m; sourceTree = "<group>"; };
-		09F186411B69077B007A3DA6 /* ZMTesting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZMTesting.framework; path = Carthage/Build/iOS/ZMTesting.framework; sourceTree = "<group>"; };
 		5405B0071BCEBDBF00C0C3BD /* ZMIImageProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMIImageProperties.h; sourceTree = "<group>"; };
 		5405B0081BCEBDBF00C0C3BD /* ZMIImageProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMIImageProperties.m; sourceTree = "<group>"; };
 		5471F8191B73E6E000460C35 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -195,8 +178,9 @@
 		5471F8251B73E6E000460C35 /* tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = tests.xcconfig; sourceTree = "<group>"; };
 		5471F8261B73E6E000460C35 /* warnings-debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "warnings-debug.xcconfig"; sourceTree = "<group>"; };
 		5471F8271B73E6E000460C35 /* warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = warnings.xcconfig; sourceTree = "<group>"; };
-		5471F82A1B73E74300460C35 /* ZMCSystem.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZMCSystem.framework; path = Carthage/Build/iOS/ZMCSystem.framework; sourceTree = "<group>"; };
-		5471F82B1B73E74300460C35 /* ZMUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZMUtilities.framework; path = Carthage/Build/iOS/ZMUtilities.framework; sourceTree = "<group>"; };
+		54A5A6081E929C4600D56F2E /* WireSystem.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WireSystem.framework; path = Carthage/Build/iOS/WireSystem.framework; sourceTree = "<group>"; };
+		54A5A6091E929C4600D56F2E /* WireUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WireUtilities.framework; path = Carthage/Build/iOS/WireUtilities.framework; sourceTree = "<group>"; };
+		54A5A60C1E929C6100D56F2E /* WireTesting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WireTesting.framework; path = Carthage/Build/iOS/WireTesting.framework; sourceTree = "<group>"; };
 		870253E01DAB7A9F0095D272 /* WireImages-iosTestHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WireImages-iosTestHost.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		870253E31DAB7AA00095D272 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		870253E51DAB7AA00095D272 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -251,6 +235,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54A5A60B1E929C4600D56F2E /* WireUtilities.framework in Frameworks */,
+				54A5A60A1E929C4600D56F2E /* WireSystem.framework in Frameworks */,
 				878D7C6E1E641EB100770E84 /* ImageIO.framework in Frameworks */,
 				09A218081B78F3530076547A /* libz.dylib in Frameworks */,
 				09A218061B78F34E0076547A /* CoreGraphics.framework in Frameworks */,
@@ -261,10 +247,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				096AD7021B67FBF100E007A8 /* OCMock.framework in Frameworks */,
-				5471F8341B73E81A00460C35 /* ZMUtilities.framework in Frameworks */,
-				5471F8351B73E81C00460C35 /* ZMCSystem.framework in Frameworks */,
-				09F186421B690799007A3DA6 /* ZMTesting.framework in Frameworks */,
+				54A5A6161E92A01100D56F2E /* WireImages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,10 +256,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				870253F91DAB7B190095D272 /* WireImages.framework in Frameworks */,
-				870253FA1DAB7B250095D272 /* ZMCSystem.framework in Frameworks */,
-				870253FB1DAB7B250095D272 /* ZMUtilities.framework in Frameworks */,
-				870253FC1DAB7B250095D272 /* ZMTesting.framework in Frameworks */,
 				870253FD1DAB7B250095D272 /* OCMock.framework in Frameworks */,
+				54A5A61B1E92A09300D56F2E /* WireSystem.framework in Frameworks */,
+				54A5A61A1E92A09000D56F2E /* WireTesting.framework in Frameworks */,
+				54A5A6191E92A08900D56F2E /* WireUtilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,12 +280,12 @@
 		098CB1191B5FA6E100712DF9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				54A5A60C1E929C6100D56F2E /* WireTesting.framework */,
+				54A5A6081E929C4600D56F2E /* WireSystem.framework */,
+				54A5A6091E929C4600D56F2E /* WireUtilities.framework */,
 				878D7C6D1E641EB100770E84 /* ImageIO.framework */,
 				09A218071B78F3530076547A /* libz.dylib */,
 				09A218051B78F34E0076547A /* CoreGraphics.framework */,
-				5471F82A1B73E74300460C35 /* ZMCSystem.framework */,
-				5471F82B1B73E74300460C35 /* ZMUtilities.framework */,
-				09F186411B69077B007A3DA6 /* ZMTesting.framework */,
 				096AD6FF1B67FBDB00E007A8 /* OCMock.framework */,
 			);
 			name = Frameworks;
@@ -534,13 +517,12 @@
 				096960121B663E7C006DF53B /* Sources */,
 				096960131B663E7C006DF53B /* Frameworks */,
 				096960141B663E7C006DF53B /* Resources */,
-				096AD7061B67FC5500E007A8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				54A5A6181E92A06100D56F2E /* PBXTargetDependency */,
 				096960191B663E7C006DF53B /* PBXTargetDependency */,
-				870253F81DAB7AA40095D272 /* PBXTargetDependency */,
 			);
 			name = "WireImages-iosTests";
 			productName = "zimages-iosTests";
@@ -723,10 +705,10 @@
 			target = 0969600B1B663E7B006DF53B /* WireImages-ios */;
 			targetProxy = 096960181B663E7C006DF53B /* PBXContainerItemProxy */;
 		};
-		870253F81DAB7AA40095D272 /* PBXTargetDependency */ = {
+		54A5A6181E92A06100D56F2E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 870253DF1DAB7A9F0095D272 /* WireImages-iosTestHost */;
-			targetProxy = 870253F71DAB7AA40095D272 /* PBXContainerItemProxy */;
+			targetProxy = 54A5A6171E92A06100D56F2E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

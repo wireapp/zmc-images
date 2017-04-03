@@ -24,7 +24,7 @@
 #endif
 
 @import WireImages;
-@import ZMTesting;
+@import WireTesting;
 
 
 

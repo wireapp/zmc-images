@@ -18,7 +18,7 @@
 
 import Foundation
 import XCTest
-import ZMTesting
+import WireTesting
 import ImageIO
 @testable import WireImages
 
