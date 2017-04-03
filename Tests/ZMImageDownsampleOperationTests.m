@@ -17,7 +17,7 @@
 // 
 
 
-@import zimages;
+@import WireImages;
 @import ZMTesting;
 
 #import "NSOperationQueue+Helpers.h"

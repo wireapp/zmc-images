@@ -20,7 +20,7 @@ import Foundation
 import XCTest
 import ZMTesting
 import ImageIO
-@testable import zimages
+@testable import WireImages
 
 class NSDataMetadataTests: XCTestCase {
     func testThatItThrowsForEmptyData() {
