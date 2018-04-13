@@ -23,7 +23,6 @@
 
 
 @interface ZMAssetMetaDataEncoder : NSObject
-
 + ( NSDictionary * __nonnull )contentDispositionForImageOwner:(id<ZMImageOwner> __nonnull)imageOwner
                                                        format:(ZMImageFormat)format
                                                conversationID:(NSUUID * __nonnull)convID
@@ -35,6 +34,7 @@
                                              format:(ZMImageFormat)format
                                       correlationID:(NSUUID * __nonnull)correlationID;
 
++ (NSString * __nullable )contentTypeForImageData:(NSData * __nonnull)imageData;
 
 @end
 
