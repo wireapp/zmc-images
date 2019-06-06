@@ -56,6 +56,11 @@ public extension NSData {
               let type = CGImageSourceGetType(imageSource) else {
             throw MetadataError.unknownFormat
         }
+
+        ///GIF file does not have properties in nullMetadataProperties. Tested some recreated GIF data from CGImageDestinationAddImageFromSource have the file size increased and lost animation. e.g. 1.6MB -> 9MB
+        if type as String == "com.compuserve.gif" {
+            return self
+        }
         
         let count = CGImageSourceGetCount(imageSource)
         let mutableData = NSMutableData(data: self as Data)
