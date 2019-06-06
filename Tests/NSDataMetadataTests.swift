@@ -68,7 +68,7 @@ class NSDataMetadataTests: XCTestCase {
         }
     }
 
-    func testThatGIFSizeDoesNotGrowAfterMetaRemoval() {
+    func testThatGIFsAreExcludedFromMetadataRemoval() {
         let data = self.data(forResource:"unsplash_big_gif", extension:"gif")!
 
         let originalMetadata = try! data.wr_metadata()
