@@ -1,4 +1,4 @@
-github "wireapp/ocmock" "v3.4.3"
-github "wireapp/wire-ios-system" "32.0.0"
-github "wireapp/wire-ios-testing" "23.0.0"
-github "wireapp/wire-ios-utilities" "40.0.0"
+github "billypchan/ocmock" "v3.4.3"
+github "billypchan/wire-ios-system" "32.0.17"
+github "billypchan/wire-ios-testing" "23.0.16"
+github "billypchan/wire-ios-utilities" "40.0.7"
