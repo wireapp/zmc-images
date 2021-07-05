@@ -22,8 +22,7 @@ import CoreServices
 import UniformTypeIdentifiers
 
 extension ZMImageDownsampleOperation {
-    @objc
-    func createImageProperties(uti: String, imageSize: CGSize) -> ZMIImageProperties? {
+    private func convertToMime(uti: String) -> String? {
         
         let mimeType: String
         if #available(iOS 14, *) {
@@ -33,12 +32,20 @@ extension ZMImageDownsampleOperation {
 
             if let preferredMIMEType = utType.preferredMIMEType {
                 mimeType = preferredMIMEType
-            } else if utType == UTType.jpeg {
-                ///HACK: hard code for M1 simulator, we should file a ticket to apple for this issue
-                mimeType = "image/jpeg"
             } else {
-                return nil
+                ///HACK: hard code MIME when preferredMIMEType is nil for M1 simulator, we should file a ticket to apple for this issue
+                switch utType {
+                case .jpeg:
+                    mimeType = "image/jpeg"
+                case .png:
+                    mimeType = "image/png"
+                case .gif:
+                    mimeType = "image/gif"
+                default:
+                    return nil
+                }
             }
+
         } else {
             let unmanagedMime = UTTypeCopyPreferredTagWithClass(uti as CFString, kUTTagClassMIMEType)
             
@@ -48,7 +55,15 @@ extension ZMImageDownsampleOperation {
 
             mimeType = retainedValue as String
         }
-        
+
+        return mimeType
+    }
+    
+    @objc
+    func createImageProperties(uti: String, imageSize: CGSize) -> ZMIImageProperties? {
+        guard let mimeType = convertToMime(uti: uti) else {
+            return nil
+        }
         
         return ZMIImageProperties(
             size: imageSize,
