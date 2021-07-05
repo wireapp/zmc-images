@@ -30,14 +30,15 @@ extension ZMImageDownsampleOperation {
             guard let utType = UTType(uti) else {
                 return nil
             }
-            ///TODO: hard code table?
-//            let jpg = UTType.jpeg
 
-            guard let preferredMIMEType = utType.preferredMIMEType else {
+            if let preferredMIMEType = utType.preferredMIMEType {
+                mimeType = preferredMIMEType
+            } else if utType == UTType.jpeg {
+                ///HACK: hard code for M1 simulator, we should file a ticket to apple for this issue
+                mimeType = "image/jpeg"
+            } else {
                 return nil
             }
-
-            mimeType = preferredMIMEType
         } else {
             let unmanagedMime = UTTypeCopyPreferredTagWithClass(uti as CFString, kUTTagClassMIMEType)
             
