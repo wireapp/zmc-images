@@ -181,7 +181,8 @@ static void bitmapContextReleaseData(void *releaseInfo, void *data);
             self.downsampleImageData = [self createCompressImageDataFromImage:image format:self.loadOperation.computedImageProperties.mimeType];
         }
     }
-    self.properties = [self createImagePropertiesWithMimeType:mimeType imageSize:imageSize];
+    
+    self.properties = [self createImagePropertiesWithUti:mimeType imageSize:imageSize];
 
     CGImageRelease(image);
 }
