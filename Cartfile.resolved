@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 github "billypchan/ocmock" "v3.4.3"
 github "billypchan/wire-ios-system" "32.0.17"
 github "billypchan/wire-ios-testing" "23.0.16"
 github "billypchan/wire-ios-utilities" "40.0.7"
+=======
+github "wireapp/ocmock" "v3.4.3"
+github "wireapp/wire-ios-system" "32.0.7"
+github "wireapp/wire-ios-testing" "23.0.1"
+github "wireapp/wire-ios-utilities" "40.0.0"
+>>>>>>> cae8de787272bd262feef422a2ce6bb04498637b
