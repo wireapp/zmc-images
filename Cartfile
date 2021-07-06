@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 github "billypchan/wire-ios-utilities" ~> 40.0.7
-=======
-github "wireapp/wire-ios-utilities" ~> 40.0.0
->>>>>>> cae8de787272bd262feef422a2ce6bb04498637b
