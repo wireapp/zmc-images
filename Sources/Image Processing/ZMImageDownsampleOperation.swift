@@ -33,6 +33,7 @@ extension ZMImageDownsampleOperation {
             if let preferredMIMEType = utType.preferredMIMEType {
                 mimeType = preferredMIMEType
             } else {
+                #if targetEnvironment(simulator)
                 ///HACK: hard code MIME when preferredMIMEType is nil for M1 simulator, we should file a ticket to apple for this issue
                 switch utType {
                 case .jpeg:
@@ -44,6 +45,9 @@ extension ZMImageDownsampleOperation {
                 default:
                     return nil
                 }
+                #else
+                return nil
+                #endif
             }
 
         } else {
