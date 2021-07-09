@@ -21,8 +21,8 @@ import Foundation
 import CoreServices
 import UniformTypeIdentifiers
 
-extension ZMImageDownsampleOperation {
-    private func convertToMime(uti: String) -> String? {
+enum MimeHelper {
+    static func convertToMime(uti: String) -> String? {
         
         let mimeType: String
         if #available(iOS 14, *) {
@@ -62,10 +62,14 @@ extension ZMImageDownsampleOperation {
 
         return mimeType
     }
+}
+
+extension ZMImageDownsampleOperation {
+
     
     @objc
     func createImageProperties(uti: String, imageSize: CGSize) -> ZMIImageProperties? {
-        guard let mimeType = convertToMime(uti: uti) else {
+        guard let mimeType = MimeHelper.convertToMime(uti: uti) else {
             return nil
         }
         
